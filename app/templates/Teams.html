@@ -1,0 +1,34 @@
+<div class="page-header">
+    <h2>{{team.name}}</h2>
+</div>
+<section id="main" class="col-md-8 col-sm-9">
+    <div class="panel">
+
+        <div class="row">
+            <div ng-repeat="rep_team in teams">
+                <div class="col-xs-4">
+                    <div class="thumbnail btn" ng-click="showSelectedTeam(rep_team)">
+                         <img src="../img/profile.jpg">
+                        <div class="caption">
+                            <a href="#/teams/{{team.id}}">
+                                <h2>{{rep_team.name}}</h2>
+                            </a>
+                            <p>{{rep_team.company}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sidebar" class="col-md-4 col-sm-3">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2 class="panel-title">Sidebar</h2>
+            <ul>
+                <li>{{selectedTeam.name}}</li>
+                <li>{{selectedTeam.company}}</li>
+            </ul>
+        </div>
+    </div>
+</section>

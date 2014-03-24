@@ -1,0 +1,120 @@
+<div class="page-header">
+</div>
+<div class="alert alert-error" ng-show="error">
+    {{errorMessage}}
+</div>
+<div class="alert alert-success" ng-show="success">
+    {{successMessage}}
+</div>
+<section id="main" class="col-md-8 col-sm-9">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a data-target="#teamDataTab" data-toggle="tab">Team Data</a></li>
+        <li><a data-target="#membersTab" data-toggle="tab">Members</a></li>
+        <li><a data-target="#projectsTab" data-toggle="tab">Projects</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="well tab-pane active" id="teamDataTab">
+            <div class="row">
+
+                <form class="form-horizontal">
+                    <fieldset>
+                       <!-- <legend>Create Team</legend>-->
+                        <div class="form-group">
+                            <label for="teamNameInput" class="control-label col-md-2">Name</label>
+
+                            <div class="col-md-10">
+                                <div class="input-group">
+                                    <input type="text" id="teamNameInput" class="form-control"
+                                           placeholder="e.g. Your Name" ng-model="team.name"/>
+                                    <span class="input-group-addon">!</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamCompanyInput" class="control-label col-md-2">Company</label>
+
+                            <div class="col-md-10">
+                                <div class="input-group">
+                                    <input type="text" id="teamCompanyInput" class="form-control"
+                                           placeholder="e.g. Your Company" ng-model="team.company"/>
+                                    <span class="input-group-addon">!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="form-group">
+                            <label for="emailInput" class="col-md-2 control-label">Email</label>
+
+                            <div class="col-md-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="email" id="emailInput" class="form-control"
+                                           placeholder="e.g. Your Email"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput" class="col-md-2 control-label">Password</label>
+
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="passwordInput"
+                                       placeholder="Password"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descriptionArea" class="col-md-2 control-label">Description</label>
+
+                            <div class="col-md-10">
+                                <textarea class="form-control" rows="3" id="descriptionArea"></textarea>
+                                <span class="help-block">Help block</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="teamImageUrlInput" class="col-md-2 control-label">Image</label>
+
+                            <div class="col-md-10">
+                                <input id="teamImageUrlInput" class="form-control"
+                                       placeholder="image Url">
+                            </div>
+                        </div>
+                        -->
+                    </fieldset>
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <button type="submit" class="btn btn-primary" ng-click="saveTeam(team)">Save</button>
+                            <button class="btn btn-default" ng-click="cancelEdit()">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="well tab-pane" id="membersTab">
+            <div class="panel">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Create Team</legend>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="well tab-pane" id="projectsTab">
+            <div class="panel">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Create Team</legend>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sidebar" class="col-md-4 col-sm-3">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2 class="panel-title">Sidebar</h2>
+        </div>
+    </div>
+</section>

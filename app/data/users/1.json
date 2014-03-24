@@ -1,0 +1,23 @@
+{
+    "links": [{
+        "rel": "self",
+        "href": "http://localhost:8080/api/users/2"
+    },
+        {
+            "rel": "customers",
+            "href": "http://localhost:8080/api/users/2/customers"
+        },
+        {
+            "rel": "photo",
+            "href": "http://localhost:8080/api/users/2/photo"
+        }],
+    "id": 2,
+    "firstName": "Lois",
+    "profilePhotoMediaType": null,
+    "lastName": "Lane",
+    "username": "loislane",
+    "password": null,
+    "profilePhotoImported": false,
+    "enabled": true,
+    "signupDate": 1370176431000
+}

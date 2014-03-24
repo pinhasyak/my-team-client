@@ -1,0 +1,35 @@
+{
+    "content": [
+        {
+            "company": "bank",
+            "links": [
+                {
+                    "href": "http://localhost:8080/api/teams/1",
+                    "rel": "self"
+                },
+                {
+                    "href": "http://localhost:8080/api/teams/1/projects",
+                    "rel": "projects"
+                }
+            ],
+            "name": "java team",
+            "projects": []
+        },
+        {
+            "company": "bank",
+            "links": [
+                {
+                    "href": "http://localhost:8080/api/teams/2",
+                    "rel": "self"
+                },
+                {
+                    "href": "http://localhost:8080/api/teams/2/projects",
+                    "rel": "projects"
+                }
+            ],
+            "name": ".net team",
+            "projects": []
+        }
+    ],
+    "links": []
+}
